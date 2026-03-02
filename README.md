@@ -37,7 +37,7 @@ Then open your browser at **http://localhost:3000**
   - PM Fasal Bima Yojana (crop insurance)
   - e-NAM (electronic mandi trading)
   - Soil Health Card Scheme
-  - PM-AASHA, PKVY, NMSA, RKVY
+    And much more!
 - **Quick topic chips** for instant access to common queries
 - **Fraud prevention warnings** built in
 - **Eligibility checks, application guides, status checks**
