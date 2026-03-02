@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Krishi Mitra - AI Agricultural Assistant</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+</head>
+<body>
+  <!-- Header -->
+  <header class="header">
+    <div class="header-inner">
+      <div class="brand">
+        <span class="brand-icon">🌱</span>
+        <div class="brand-text">
+          <h1>Farmers ChatBot</h1>
+          <p>AI Agricultural Scheme Assistant</p>
+        </div>
+      </div>
+      <div class="header-actions">
+        <span class="api-status" id="apiStatus">Checking…</span>
+        <button class="btn-clear" id="clearBtn" title="New conversation">🔄 New Chat</button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main layout -->
+  <main class="main">
+    <!-- Sidebar with quick links -->
+    <aside class="sidebar">
+      <h3>Quick Topics</h3>
+      <div class="chip-list" id="chipList">
+        <button class="chip">PM-KISAN eligibility</button>
+        <button class="chip">How to apply for KCC</button>
+        <button class="chip">Crop insurance (PMFBY)</button>
+        <button class="chip">e-NAM registration</button>
+        <button class="chip">Soil Health Card</button>
+        <button class="chip">PM-KISAN status check</button>
+        <button class="chip">Payment not received</button>
+        <button class="chip">Which scheme suits me?</button>
+        <button class="chip">Organic farming scheme</button>
+        <button class="chip">MSP information</button>
+      </div>
+      <hr />
+      <div class="helplines">
+        <h3>Helplines</h3>
+        <p><strong>PM-KISAN</strong><br />📞 155261</p>
+        <p><strong>PM-KISAN (Alt)</strong><br />📞 011-24300606</p>
+        <p><strong>Kisan Call Centre</strong><br />📞 1800-180-1551</p>
+        <p><strong>PMFBY</strong><br />🌐 pmfby.gov.in</p>
+        <p><strong>e-NAM</strong><br />🌐 enam.gov.in</p>
+      </div>
+    </aside>
+
+    <!-- Chat area -->
+    <section class="chat-section">
+      <div class="chat-window" id="chatWindow">
+        <!-- Welcome message added by JS -->
+      </div>
+
+      <!-- Typing indicator -->
+      <div class="typing-indicator hidden" id="typingIndicator">
+        <span></span><span></span><span></span>
+        <em>Krishi Mitra is thinking…</em>
+      </div>
+
+      <!-- Input bar -->
+      <div class="input-bar">
+        <textarea
+          id="userInput"
+          placeholder="Type your question in any language… (किसी भी भाषा में पूछें)"
+          rows="1"
+          autofocus
+        ></textarea>
+        <button class="btn-send" id="sendBtn" title="Send">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <line x1="22" y1="2" x2="11" y2="13"/>
+            <polygon points="22 2 15 22 11 13 2 9 22 2"/>
+          </svg>
+        </button>
+      </div>
+      <p class="footer-note">
+        Information is current as of March 2026 · Always verify at official government portals · All schemes are <strong>FREE</strong>
+      </p>
+    </section>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>
